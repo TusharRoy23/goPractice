@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Hello Tushar!</title>
+    </head>
+    <body>
+        <ul>
+            {{range .Desh}}
+                <li>
+                    {{$x := .Capital}}
+                    {{$x}}, {{ .Name}}
+                </li>
+            {{end}}
+        </ul>
+        <ul>
+            {{range .Vasha}}
+                <li>
+                    {{.Origin}}
+                </li>
+            {{end}}
+        </ul>
+    </body>
+</html>
