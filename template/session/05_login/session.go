@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"net/http"
 
 	uuid "github.com/satori/go.uuid"
@@ -30,6 +31,7 @@ func alreadyLoggedIn(req *http.Request) bool {
 		return false
 	}
 	un := dbSessions[c.Value]
+	fmt.Println("print un:", un)
 	_, ok := dbUsers[un]
 	return ok
 }
