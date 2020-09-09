@@ -1,0 +1,4 @@
+Que: What we can do with hmac ?
+Ans: We can verify the actual user those who are requested for API. We can store 2 values in users' machine. One is non-hash and another is hash.
+     Everytime a user request to the API, send with these 2 values and in the server-end we can compare those 2 values to check
+     whether those values are modified or not.

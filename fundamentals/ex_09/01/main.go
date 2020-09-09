@@ -12,4 +12,23 @@ func main() {
 
 	var wg sync.WaitGroup
 	wg.Add(2)
+
+	go func() {
+		fmt.Println("Hello from one thing")
+		wg.Done()
+	}()
+
+	go func() {
+		fmt.Println("Hello from two thing")
+		wg.Done()
+	}()
+
+	fmt.Println("end cpu", runtime.NumCPU())
+	fmt.Println("end gs", runtime.NumGoroutine())
+
+	wg.Wait()
+
+	fmt.Println("about to exit")
+	fmt.Println("end cpu", runtime.NumCPU())
+	fmt.Println("end gs", runtime.NumGoroutine())
 }
