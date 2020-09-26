@@ -1,0 +1,4 @@
+https://www.techiedelight.com/recursion-practice-problems-with-solutions/#:~:text=Recursion%20is%20a%20problem%20solving,that%20has%20a%20trivial%20solution.
+
+1) Reverse a given string.
+2) Find all binary strings that can be formed from given wildcard pattern. (Wildcard => ?)
