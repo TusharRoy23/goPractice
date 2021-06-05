@@ -29,14 +29,14 @@ type ordHuman interface {
 }
 
 func bar(h human) {
-	switch h.(type) {
+	switch h.(type) { // This is called type assertion in GO
 	case secretAgent:
 		fmt.Println("Passed value : ", h.(secretAgent).Firstname)
 	}
 }
 
 func foo(h ordHuman) {
-	switch h.(type) {
+	switch h.(type) { // This is called type assertion in GO
 	case person:
 		fmt.Println("Passed value : ", h.(person).Lastname)
 	}
